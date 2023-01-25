@@ -8,15 +8,7 @@ SELECT title, from_date, to_date
 FROM titles;
 
 --3 & 4 Create a new table using the INTO clause and Join both tables on the primary key.
---OPTION 1 
-SELECT Employees.emp_no, Employees.first_name, Employees.last_name, Titles.title, Titles.from_date, Titles.to_date
-INTO NewTable
-FROM Employees
-INNER JOIN Titles ON Employees.emp_no= Titles.emp_no;
 
-SELECT * 
-FROM NEWTABLE
---OPTION 2 BOTH WORK
 SELECT Employees.emp_no, Employees.first_name, Employees.last_name, Titles.title, Titles.from_date, Titles.to_date
 FROM Employees
 INNER JOIN Titles ON Employees.emp_no= Titles.emp_no;
