@@ -1,5 +1,3 @@
-SELECT *
-FROM TITLES;
 --DELIVERABLE 1
 --1. Retrieve the emp_no, first_name, and last_name columns from the Employees table.
 SELECT emp_no, first_name, last_name
@@ -24,8 +22,6 @@ INNER JOIN Titles
 WHERE
 	birth_date BETWEEN '1952-01-01' AND '1955-12-31'
 ORDER BY Employees.emp_no;
-
-
 
 --Filter the data on the birth_date column to retrieve the employees who were born between 1952 and 1955.
 --Then, order by the employee number.
@@ -53,9 +49,5 @@ FROM retirement_titles
 WHERE to_date = ('9999-01-01')
 ORDER BY emp_no ASC;
 
---Retrieve the employee number, first and last name, and title columns from the Retirement Titles table.
---These columns will be in the new table that will hold the most recent title of each employee.
 
-SELECT emp_no, first_name, last_name, titles
-FROM retirement_titles;
 
